@@ -26,6 +26,8 @@ function generateProductId() {
 }
 
 async function addProduct(productData) {
+    console.log(productData);
+    console.log(JSON.stringify(productData));
     await fetch('https://dummyjson.com/products/add', {
         method: 'POST',
         headers: {
